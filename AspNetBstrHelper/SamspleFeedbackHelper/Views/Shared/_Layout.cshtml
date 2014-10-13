@@ -27,7 +27,7 @@
     </div>
 
     <div class="container body-content">
-        <div id="message" class="alert alert-dismissable" style="display: none; margin-bottom: 10px;"></div>
+        @Html.Feedback()
         @RenderBody()
         <hr />
         <footer>
@@ -37,35 +37,6 @@
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            @if (TempData["Result"] == null)
-                {
-                    // kein Resultat
-                    <text>$("#message").hide();</text>
-                }
-                else
-                {
-                    if(TempData["Result"].Equals("Done"))
-                    {
-                        //positives Resultat
-                        <text>
-            $("#message").removeClass("alert-danger").addClass("alert-success");
-            $("#message").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><span class='glyphicon glyphicon-ok'></span> " + "@Html.Raw(TempData["Message"])");
-            $("#message").show();
-            </text>
-                    }
-                    else
-                    {
-                        //negateives Resultat
-                        <text>
-            $("#message").addClass("alert-danger").removeClass("alert-success");
-            $("#message").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><span class='glyphicon glyphicon-remove'></span> " + "@Html.Raw(TempData["Message"])");
-            $("#message").show();
-            </text>
-                    }
-                }
-        });
-    </script>
+    @Html.FeedbackScript(TempData)
 </body>
 </html>
