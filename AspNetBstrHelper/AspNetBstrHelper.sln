@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetBstrHelper", "AspNetBstrHelper\AspNetBstrHelper.csproj", "{0779191B-1F8A-4C3F-94D0-D93D52120590}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F94AC0D2-335D-49CF-976B-47A75E617EE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamspleFeedbackHelper", "SamspleFeedbackHelper\SamspleFeedbackHelper.csproj", "{EE51140C-7FB0-4D26-9C8C-5E6C90CBFE62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0779191B-1F8A-4C3F-94D0-D93D52120590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0779191B-1F8A-4C3F-94D0-D93D52120590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0779191B-1F8A-4C3F-94D0-D93D52120590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0779191B-1F8A-4C3F-94D0-D93D52120590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE51140C-7FB0-4D26-9C8C-5E6C90CBFE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE51140C-7FB0-4D26-9C8C-5E6C90CBFE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE51140C-7FB0-4D26-9C8C-5E6C90CBFE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE51140C-7FB0-4D26-9C8C-5E6C90CBFE62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE51140C-7FB0-4D26-9C8C-5E6C90CBFE62} = {F94AC0D2-335D-49CF-976B-47A75E617EE0}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@Html.ActionLink("Feedback erzeugen", "CreateFeedBack", new { success = true, message = "Feedback Beispiel" }, new { @class = "btn btn-danger" })
